@@ -1,0 +1,13 @@
+# package runtime requirements
+
+# test requirements
+coverage[toml]<7.0.0
+flake8
+pre-commit
+pytest
+pytest-cov
+tox
+
+# deployment
+pip>=19.2.3
+wheel>=0.33.6
