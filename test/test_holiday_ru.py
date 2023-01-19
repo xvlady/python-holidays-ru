@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from holidays_ru import check_holiday, is_holiday
+from holidays-ru import check_holiday, is_holiday
 
 
 class TestBasics(unittest.TestCase):
