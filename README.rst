@@ -61,8 +61,8 @@ Quick Start
 
     check_holiday(date(2023, 1, 1))  # True
     check_holiday(date(2023, 1, 12)) # False
-    check_holiday(date(2022, 1, 31)) # True
-    check_holiday(date(2022, 1, 31), with_weekends=False) # False, it's Sunday
+    check_holiday(date(2022, 12, 31)) # True
+    check_holiday(date(2022, 12, 31), with_weekends=False) # False, it's Sunday
     is_holiday(date(2023, 1, 1))     # "New Year's Day"
     is_holiday(date(2023, 1, 12))    # ""
     is_holiday(date(2023, 1, 15))    # "Weekend"
