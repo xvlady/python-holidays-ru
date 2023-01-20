@@ -2,15 +2,20 @@ from datetime import date
 
 __version__ = "0.1"
 
-MOVED_HOLIDAYS = [
-    date(2020, 2, 24), date(2020, 3, 9), date(2020, 5, 4), date(2020, 5, 5), date(2020, 5, 11),
-    # date(2022, 12, 11),
+from typing import List
+
+MOVED_HOLIDAYS: List[date] = [
+    date(2020, 2, 24),
+    date(2020, 3, 9),
+    date(2020, 5, 4),
+    date(2020, 5, 5),
+    date(2020, 5, 11),
 ]
 
-WORK_WEEKENDS = []
+WORK_WEEKENDS: List[date] = []
 
-WEEKENDS = "Выходной"
-MOVED_HOLIDAY = "Передвинутый выходной"
+WEEKENDS: str = "Выходной"
+MOVED_HOLIDAY: str = "Передвинутый выходной"
 
 
 def is_holiday(d: date) -> str:
@@ -45,10 +50,10 @@ def is_holiday(d: date) -> str:
     if d in MOVED_HOLIDAYS:
         return MOVED_HOLIDAY
     if d in WORK_WEEKENDS:
-        return ''
+        return ""
     if d.weekday() in (6, 7):
         return WEEKENDS
-    return ''
+    return ""
 
 
 def check_holiday(d: date, with_weekends: bool = True) -> bool:
