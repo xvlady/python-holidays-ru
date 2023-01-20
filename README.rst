@@ -48,7 +48,7 @@ The latest stable version can always be installed or updated via pip:
 Documentation
 -------------
 
-View Quick Start. You can use original library from other country and other functional https://python-holidays.readthedocs.io/
+View Quick Start. You can use original library from other country and other functional https://github.com/dr-prodigy/python-holidays
 
 
 Quick Start
