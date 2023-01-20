@@ -21,11 +21,11 @@ flexible as possible.
         :alt: Downloads
 
 :CD/CI:
-    .. image:: https://github.com/xvlady5/python-holidays-ru/workflows/Tests/badge.svg
-        :target: actions
+    .. image:: https://github.com/xvlady/python-holidays-ru/actions/workflows/python-package.yml/badge.svg
+        :target: https://github.com/xvlady/python-holidays-ru/actions/workflows/python-package.yml
 
-    .. image:: http://img.shields.io/coveralls/xvlady5/python-holidays-ru/master
-        :target: https://coveralls.io/r/xvlady5/python-holidays-ru
+    .. image:: https://coveralls.io/repos/github/xvlady/python-holidays-ru/badge.svg?branch=main
+        :target: https://coveralls.io/github/xvlady/python-holidays-ru?branch=main
 
 :Meta:
     .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
