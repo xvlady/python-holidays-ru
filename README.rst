@@ -59,7 +59,7 @@ Quick Start
 .. code-block:: python
 
     from datetime import date
-    from holidays-ru import check_holidays, is_holidays
+    from holidays_ru import check_holidays, is_holidays
 
     check_holiday(date(2023, 1, 1))  # True
     check_holiday(date(2023, 1, 12)) # False
