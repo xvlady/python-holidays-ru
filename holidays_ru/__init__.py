@@ -35,12 +35,20 @@ WEEKENDS: str = "Выходной"
 MOVED_HOLIDAY: str = "Передвинутый выходной"
 
 
+# https://ru.wikipedia.org/wiki/История_праздников_России
 def is_holiday(d: date) -> str:
-    # New Year's Day
-    if d.month == 1 and d.day in (1, 2, 3, 4, 5, 6, 8):
-        return "Новогодние каникулы"
-    if d.month == 1 and d.day == 7:
-        return "Рождество Христово"
+    if d.month == 1:
+        # New Year's Day
+        if d.year >= 2013 and d.day in (1, 2, 3, 4, 5, 6, 8):
+            return "Новогодние каникулы"
+        if d.year >= 2005 and d.day in (1, 2, 3, 4, 5):
+            return "Новогодние каникулы"
+        if d.year >= 1993 and d.day == 2:
+            return "Новый год"
+        if (d.year >= 1948 or d.year < 1929) and d.day == 1:
+            return "Новый год"
+        if d.year >= 1991 and d.day == 7:
+            return "Рождество Христово"
     # Man Day
     if d.month == 2 and d.day == 23:
         return "День защитника Отечества"
@@ -54,7 +62,7 @@ def is_holiday(d: date) -> str:
     if d.month == 5 and d.day == 9:
         return "День Победы"
     # Russia's Day
-    if d.month == 6 and d.day == 12:
+    if d.year >= 1991 and d.month == 6 and d.day == 12:
         return "День России"
     if d.year >= 2005:
         # Unity Day
